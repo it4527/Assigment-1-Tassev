@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/vendor/modernizr/modernizr-custom.js"></script>
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+
+    <title>Computer Shop</title>
+</head>
+
+<body>
+
+  <!--   <div id="browser-support-warning">
+        Your browser does not support ES6
+    </div> -->
+
+    <header>
+        <div class="logo">
+            <img src="./media/sasa.png" alt="Description of the image">
+        </div>
+        <p>Smart Addiction PC Shop</p>
+    </header>
+
+
+
+
+    <nav id="menu">
+        <div id="menucont">
+            <ul>
+                <li><a href="index.html" class="">HOME</a></li>
+                <li><a href="#components" class="">COMPONENTS</a></li>
+                <li><a href="#peripherals" class="">PERIPHERALS</a></li>
+                <li><a href="#accessories" class="">ACCESSORIES</a></li>
+                <li><a href="#order" class="">ORDER NOW</a></li>
+                <li><a href="#aboutus" class="">ABOUT US</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <section id="home">
+        <h2>Welcome to Smart Addiction PC Shop</h2>
+        <p>Discover a wide range of high-quality computer components, peripherals, and accessories at our Computer
+            Web-Shop. We are dedicated to providing the latest technology to enhance your computing experience.</p>
+    </section>
+
+    <section id="components">
+        <div class="comp-hard">
+            <h2>Components & Hardware</h2>
+            <p>Discover a world of high-performance computer components that fuel the heart of cutting-edge
+                technology.
+                From powerful processors to state-of-the-art graphics cards, our collection is a gateway to building
+                the
+                ultimate PC experience. Dive into the realm of innovation and elevate your computing power with our
+                carefully curated selection of components and hardware.</p>
+        </div>
+        <div class="comp">
+            <div class="image-item">
+                <img src="./media/Gpu.jpg" alt="Image 1">
+                <img src="./media/Motherboards.jpg" alt="Image 2">
+                <img src="./media/PC-cases.jpg" alt="Image 3">
+                <img src="./media/cpu-pic.jpg" alt="Image 4">
+            </div>
+        </div>
+    </section>
+
+    <section id="peripherals">
+        <div class="section-wrapper">
+            <div class="dinamic-module-wrap">
+                <h2>Explore Our Cutting-Edge Peripherals</h2>
+                <p>Enhance your computing experience with our top-notch peripherals designed to elevate both
+                    functionality and aesthetics. From sleek keyboards to precision mice, we offer a range of
+                    high-quality accessories to complement your work or gaming setup. Immerse yourself in a world of
+                    advanced technology and ergonomic design. Our peripherals are not just tools; they're an
+                    extension
+                    of your creativity and productivity. Whether you're working on intricate web and mobile designs
+                    or
+                    delving into Java programming, our accessories are crafted to meet the demands of your dynamic
+                    workflow.</p>
+            </div>
+            <div class="peripherals-grid">
+                <div class="peripheral-item">
+                    <img src="./media/pc1.png" alt="monitor">
+                </div>
+                <div class="peripheral-item">
+                    <img src="./media/keyboard.png" alt="Keyboard">
+                </div>
+                <div class="peripheral-item">
+                    <img src="./media/Headset.png" alt="Headset">
+                </div>
+                <div class="peripheral-item">
+                    <img src="./media/printer.png" alt="Printer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="accessories">
+        <div class="section-wrapper">
+            <div class="dinamic-module-wrap2">
+                <h2>Explore Our Wide Accessories</h2>
+                <p>Enhance your computing experience with our top-notch accessories. From sleek and stylish to
+                    high-performance essentials, we have everything you need to elevate your setup.</p>
+            </div>
+            <div class="accessories-grid">
+                <div class="peripheral-item">
+                    <img src="./media/compac1.png" alt="First">
+                </div>
+                <div class="peripheral-item">
+                    <img src="./media/compac2.png" alt="Sec">
+                </div>
+                <div class="peripheral-item">
+                    <img src="./media/comac3.png" alt="Third">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order">
+        <div class="order-box">
+            <form id="order-form">
+                <h2>PC Shop</h2>
+                <!-- Step 1: Select Product Category -->
+                <div class="form-group">
+                    <label for="product-category">Select a Product Category:</label>
+                    <select id="product-category" name="product-category">
+                        <option value="components">Components</option>
+                        <option value="peripherals">Peripherals</option>
+                        <option value="accessories">Accessories</option>
+                    </select>
+                </div>
+
+                <!-- Step 2: Select Specific Part -->
+                <div class="form-group">
+                    <label for="specific-part">Select a Specific Part:</label>
+                    <select id="specific-part" name="specific-part">
+                        <option value="processor">Processor</option>
+                        <option value="motherboard">Motherboard</option>
+                        <option value="graphics-card">Graphics Card</option>
+                    </select>
+                </div>
+
+
+                <!-- Step 3: Select RAM memory -->
+                <div class="form-group">
+                    <label for="ram">Select RAM (Memory):</label>
+                    <select id="ram" name="ram">
+                        <option value="8GB DDR4">8GB DDR4</option>
+                        <option value="16GB DDR4">16GB DDR4</option>
+                        <option value="32GB DDR5">32GB DDR5</option>
+                        <option value="64GB DDR5">64GB DDR5</option>
+                    </select>
+                </div>
+
+
+
+
+
+                <!-- Buttons for Back Reset and Submit -->
+                <div class="form-group">
+                    <button type="button" id="back-button" onclick="goBack()">Back</button>
+                    <button type="reset" id="reset-button">Reset</button>
+                    <button type="submit" id="submit-button">Submit</button>
+                </div>
+            </form>
+        </div>
+
+
+
+
+
+
+        <!-- Box for Changing Images Dynamically -->
+        <div class="image-box">
+            <img id="dynamic-image" src="" alt="Dynamic Image">
+        </div>
+    </section>
+
+    <section id="aboutus">
+        <div id="news" class="latest-news">
+            <h2>Stay Updated with the Latest Tech News</h2>
+            <p>Explore our blog for the latest in the tech world. Stay informed about product launches, industry
+                trends,
+                and valuable tips to make the most of your computing devices.</p>
+        </div>
+        <div id="reviews" class="customer-reviews">
+            <h2>What Our Customers Say</h2>
+            <p>Join the satisfied customers who have experienced top-notch service and quality products. Read their
+                reviews and testimonials to understand why our Computer Web-Shop is the go-to destination for tech
+                enthusiasts.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Smart Addiction PC Shop</p>
+    </footer>
+
+
+
+    <script type="module" src="./js/app.js"></script>
+
+</body>
+
+</html>
